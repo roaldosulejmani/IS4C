@@ -44,21 +44,25 @@ return <<<HTML
                 </select>
             </td>
             <td class="text-right">
-                <label class="control-label small">Dept Start</label>
+                <label class="control-label small">Department</label>
             </td>
-            <td>
-                <select name="deptStart" id="dept-start" class="form-control input-sm">
-                    <option value="">Select Start...</option>
+            <td style="white-space:nowrap;">
+                <select name="deptStart" id="dept-start" class="form-control input-sm" style="width:48%;display:inline-block;">
+                    <option value="">Start...</option>
+                    {$deptOpts}
+                </select>
+                <select name="deptEnd" id="dept-end" class="form-control input-sm" style="width:48%;display:inline-block;">
+                    <option value="">End...</option>
                     {$deptOpts}
                 </select>
             </td>
             <td class="text-right">
-                <label class="control-label small">Dept End</label>
+                <label class="control-label small">Sub Dept</label>
             </td>
             <td>
-                <select name="deptEnd" id="dept-end" class="form-control input-sm">
-                    <option value="">Select End...</option>
-                    {$deptOpts}
+                <select name="subdept" class="form-control input-sm">
+                    <option value="">Any</option>
+                    {$subdeptOpts}
                 </select>
             </td>
         </tr>

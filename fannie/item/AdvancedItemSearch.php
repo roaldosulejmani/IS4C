@@ -47,6 +47,7 @@ class AdvancedItemSearch extends FannieRESTfulPage
         'searchBrand',
         'searchSuperDepartment',
         'searchDepartments',
+        'searchSubDepartment',
         'searchServiceScale',
         'searchModifiedDate',
         'searchVendor',
@@ -281,6 +282,17 @@ class AdvancedItemSearch extends FannieRESTfulPage
             // add dept lower then higher
             $search->args[] = $dept1 < $dept2 ? $dept1 : $dept2;
             $search->args[] = $dept2 > $dept1 ? $dept2 : $dept1;
+        }
+
+        return $search;
+    }
+
+    private function searchSubDepartment($search, $form)
+    {
+        $subdept = $form->subdept;
+        if ($subdept !== '') {
+            $search->where .= ' AND p.subdept=? ';
+            $search->args[] = $subdept;
         }
 
         return $search;
@@ -1052,6 +1064,18 @@ class AdvancedItemSearch extends FannieRESTfulPage
         $deptOpts = '';
         while ($row = $dbc->fetchRow($depts)) {
             $deptOpts .= sprintf('<option value="%d">%d %s</option>', $row['dept_no'], $row['dept_no'], $row['dept_name']);
+        }
+
+        $subdepts = $dbc->query('SELECT s.subdept_no, s.subdept_name, d.dept_name
+            FROM subdepts AS s LEFT JOIN departments AS d ON s.dept_ID=d.dept_no
+            ORDER BY s.subdept_no');
+        $subdeptOpts = '';
+        while ($row = $dbc->fetchRow($subdepts)) {
+            $label = $row['subdept_no'] . ' ' . $row['subdept_name'];
+            if ($row['dept_name']) {
+                $label .= ' (' . $row['dept_name'] . ')';
+            }
+            $subdeptOpts .= sprintf('<option value="%d">%s</option>', $row['subdept_no'], $label);
         }
 
         $model = new VendorsModel($dbc);
