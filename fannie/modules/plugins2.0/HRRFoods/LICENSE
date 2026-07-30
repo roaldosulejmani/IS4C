@@ -1,0 +1,169 @@
+HRR Foods CORE-POS Integration — Source-Available License
+
+Copyright © 2026 HRR Foods LLC. All rights reserved.
+
+This license governs the HRR Foods plugin source code located at
+`fannie/modules/plugins2.0/HRRFoods/` and the companion files at
+`fannie/purchasing/exporters/HRRFoodsExport.php` and
+`fannie/purchasing/importers/HRRInvoiceImport.php` (collectively, the
+"Software"). The Software is source-available, NOT open source. It is
+NOT licensed under the GNU General Public License, the Apache License,
+the MIT License, or any other OSI-approved open-source license.
+
+This license is modeled on the Business Source License v1.1 (BSL 1.1)
+used by MariaDB and others; terms have been adapted for the HRR Foods
+<-> co-op POS use case.
+
+──────────────────────────────────────────────────────────────────────────
+1. Definitions
+──────────────────────────────────────────────────────────────────────────
+
+"Change Date"      means 2030-01-01 (four years from the date of first
+                   public release of the Software by HRR Foods LLC).
+
+"Change License"   means the Apache License, Version 2.0, applied to the
+                   Software on and after the Change Date.
+
+"Licensor"         means HRR Foods LLC.
+
+"You" / "Your"     means each licensee. "Licensee" means any individual
+                   or legal entity that has downloaded, installed,
+                   copied, or otherwise obtained a copy of the Software.
+
+"Co-op"            means a cooperatively-owned grocery retail business,
+                   including any subsidiary stores, distribution arms,
+                   or corporate entities under common ownership with
+                   that co-op.
+
+"Permitted Use"    means the uses defined in Section 3.
+
+──────────────────────────────────────────────────────────────────────────
+2. Grant of License
+──────────────────────────────────────────────────────────────────────────
+
+Subject to the terms of this license, the Licensor grants You a
+worldwide, non-exclusive, royalty-free, non-transferable license to
+use, copy, modify, and distribute the Software, in each case solely for
+the Permitted Uses described in Section 3.
+
+──────────────────────────────────────────────────────────────────────────
+3. Permitted Uses
+──────────────────────────────────────────────────────────────────────────
+
+3.1 Internal use. You may use the Software internally within Your
+    organization, including testing, evaluation, and production use
+    in support of Your business operations.
+
+3.2 Co-op use. Co-ops may use the Software to integrate their CORE-POS
+    / FANNIE installations with HRR Foods LLC's wholesale ordering,
+    catalog, pricing, invoicing, and image services (the "HRR
+    Services"). This includes installation, configuration, modification
+    for the co-op's own stores, and redistribution within the co-op's
+    own multi-store group.
+
+3.3 POS vendor integration. A vendor of point-of-sale software serving
+    the cooperative grocery segment may integrate the Software into
+    that vendor's product line, provided the resulting product is made
+    available to Co-ops under terms no more restrictive than this
+    license.
+
+3.4 No competing service. You may NOT use the Software, alone or in
+    combination with other code, to build, operate, or offer a service
+    that competes with the HRR Services — for example, a wholesale
+    ordering or catalog API that is not operated by HRR Foods LLC.
+
+3.5 No resale as a stand-alone product. You may NOT sublicense, sell,
+    or redistribute the Software, or any modified version of it, as a
+    stand-alone product or hosted service whose primary purpose is to
+    provide the functionality of the Software itself. Distribution
+    embedded within a co-op's POS environment is permitted under
+    Section 3.2 and 3.3 above.
+
+──────────────────────────────────────────────────────────────────────────
+4. Restrictions
+──────────────────────────────────────────────────────────────────────────
+
+4.1 No patent assertion. You may not assert any patent claim against
+    the Licensor or any other licensee alleging that the Software
+    infringes a patent You own or have the right to assert.
+
+4.2 Trademark. "HRR Foods", "HRR" (in the wholesale-distributor
+    context), and any associated logos are trademarks of HRR Foods
+    LLC. This license does NOT grant You any right to use those
+    trademarks except as required to describe the origin of the
+    Software.
+
+4.3 No removal of notices. You may not remove or alter any copyright,
+    license, or attribution notices contained in the Software.
+
+4.4 Compliance with applicable law. You are responsible for ensuring
+    that Your use of the Software complies with all applicable laws
+    and regulations.
+
+──────────────────────────────────────────────────────────────────────────
+5. Disclaimer of Warranty
+──────────────────────────────────────────────────────────────────────────
+
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY
+OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+NONINFRINGEMENT. THE LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL
+BE UNINTERRUPTED, ERROR-FREE, OR FREE OF HARMFUL COMPONENTS.
+
+──────────────────────────────────────────────────────────────────────────
+6. Limitation of Liability
+──────────────────────────────────────────────────────────────────────────
+
+IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE,
+ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE, EVEN IF THE LICENSOR HAS BEEN ADVISED
+OF THE POSSIBILITY OF SUCH DAMAGES.
+
+──────────────────────────────────────────────────────────────────────────
+7. Term and Termination
+──────────────────────────────────────────────────────────────────────────
+
+7.1 Term. This license applies for the period from the date You first
+    obtain the Software until terminated.
+
+7.2 Termination for breach. The Licensor may terminate this license as
+    to You if You materially breach Section 3 or Section 4 and fail to
+    cure within 30 days of written notice from the Licensor.
+
+7.3 Effect of termination. Upon termination, You must cease all use
+    and destroy all copies of the Software in Your possession.
+
+──────────────────────────────────────────────────────────────────────────
+8. Change to Change License
+──────────────────────────────────────────────────────────────────────────
+
+On the Change Date, the Software is automatically relicensed under the
+Change License (Apache License, Version 2.0) for all Licensees,
+including those who obtained the Software before the Change Date. The
+terms of the Change License will apply to Your use of the Software on
+and after the Change Date; the terms of this license continue to apply
+to Your use of the Software before the Change Date.
+
+──────────────────────────────────────────────────────────────────────────
+9. General
+──────────────────────────────────────────────────────────────────────────
+
+9.1 Entire agreement. This license constitutes the entire agreement
+    between the Licensor and You regarding the Software and supersedes
+    any prior or contemporaneous understandings.
+
+9.2 Severability. If any provision of this license is held to be
+    unenforceable, the remaining provisions will continue in full force
+    and effect.
+
+9.3 Governing law. This license is governed by the laws of the State
+    of Illinois, United States of America, without regard to its
+    conflict-of-laws principles.
+
+9.4 Contact. Questions about this license may be directed to:
+        legal@hrrfoods.com
+
+──────────────────────────────────────────────────────────────────────────
+END OF LICENSE
+──────────────────────────────────────────────────────────────────────────

@@ -1,0 +1,9 @@
+*
+!.gitignore
+!logs/
+!dryrun/
+!po-queue/
+!recordings/
+!admin/
+!images/
+!*.json
